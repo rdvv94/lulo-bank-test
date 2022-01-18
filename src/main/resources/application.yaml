@@ -1,0 +1,15 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /lulo-bank-test
+spring:
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:lulo-bank
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
